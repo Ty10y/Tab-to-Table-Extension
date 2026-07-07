@@ -8,6 +8,8 @@
 
 No accounts, no exports, no JSON. Just names and links.
 
+!Coming soon to Google Extensions Store!
+
 </div>
 
 ---
