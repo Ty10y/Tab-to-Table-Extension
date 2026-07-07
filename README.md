@@ -63,14 +63,17 @@ A packaged build is available at [`build/ty10ys_T2T_1.2.0.crx`](build/ty10ys_T2T
 
 ## Usage
 
-**To copy a group as a table:**
-1. Click the Tab-to-Table icon.
-2. Click any tab group in the list. It's now on your clipboard as both HTML and Markdown — paste anywhere.
+**Export — a tab group → a table:**
+1. Create a tab group in Chrome.
+2. Click the extension icon to open the selection popup.
+3. Click the tab group you want (if you have more than one). All its tabs are copied to your clipboard as links — both HTML and Markdown.
+4. Paste the table anywhere. Done.
 
-**To import links as a group:**
-1. Click the icon, then **Import**.
-2. Paste a table or any text containing links.
-3. Click **Confirm**. The links open as background tabs in a new group named **"New Group"**.
+**Import — a table (or list of URLs) → a tab group:**
+1. Click the extension icon to open the popup.
+2. Click the **Import** button.
+3. Type or paste a copied table, or any other list of URLs.
+4. Click **Confirm** to create a new tab group containing every listed URL. Done.
 
 ## How it works
 
