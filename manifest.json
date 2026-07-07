@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Ty10y's Tab-to-Table",
+  "version": "1.2.0",
+  "description": "Copies the tabs in a chosen tab group to your clipboard as a table (HTML + Markdown).",
+  "permissions": ["tabs", "tabGroups"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Copy tab group to table",
+	"default_icon": "icon.png"
+  },
+  "icons": {
+	  "128": "icon.png"
+  }
+}

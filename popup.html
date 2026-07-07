@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    :root { color-scheme: dark; }
+    body {
+      margin: 0;
+      min-width: 260px;
+      font: 13px/1.4 system-ui, sans-serif;
+      background: #0d0f12;
+      color: #e6e6e6;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 12px;
+      border-bottom: 1px solid #1e2228;
+      font-weight: 600;
+      color: #8ce0d8;
+    }
+    .headerBtn {
+      font: 12px system-ui, sans-serif;
+      font-weight: 600;
+      color: #8ce0d8;
+      background: #14171c;
+      border: 1px solid #23272e;
+      border-radius: 6px;
+      padding: 4px 10px;
+      cursor: pointer;
+    }
+    .headerBtn:hover { background: #1b1f26; border-color: #2e343d; }
+    #list { padding: 6px; }
+    .group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 8px 10px;
+      margin: 2px 0;
+      background: #14171c;
+      border: 1px solid #23272e;
+      border-radius: 6px;
+      color: #e6e6e6;
+      cursor: pointer;
+      text-align: left;
+    }
+    .group:hover { background: #1b1f26; border-color: #2e343d; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+    .name { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .count { color: #7d8590; font-size: 11px; }
+    .msg { padding: 10px 12px; color: #7d8590; }
+    .ok { color: #8ce0d8; }
+    .err { color: #ff8a80; }
+
+    #importView {
+      display: none;
+      padding: 8px;
+      flex-direction: column;
+      gap: 8px;
+    }
+    #importText {
+      width: 100%;
+      min-height: 160px;
+      box-sizing: border-box;
+      background: #14171c;
+      border: 1px solid #23272e;
+      border-radius: 6px;
+      color: #e6e6e6;
+      font: 12px/1.4 system-ui, sans-serif;
+      padding: 8px;
+      resize: vertical;
+    }
+    .importActions {
+      display: flex;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+    .btn {
+      font: 12px system-ui, sans-serif;
+      font-weight: 600;
+      border-radius: 6px;
+      padding: 6px 12px;
+      cursor: pointer;
+      border: 1px solid #23272e;
+    }
+    .btn.primary {
+      background: #8ce0d8;
+      color: #0d0f12;
+      border-color: #8ce0d8;
+    }
+    .btn.secondary {
+      background: #14171c;
+      color: #e6e6e6;
+    }
+    .btn.secondary:hover { background: #1b1f26; }
+  </style>
+</head>
+<body>
+  <header>
+    <span>Copy tab group &rarr; table</span>
+    <button id="importBtn" class="headerBtn">Import</button>
+  </header>
+  <div id="list"></div>
+  <div id="importView">
+    <textarea id="importText" placeholder="Paste a table with links here..."></textarea>
+    <div class="importActions">
+      <button id="cancelBtn" class="btn secondary">Cancel</button>
+      <button id="confirmBtn" class="btn primary">Confirm</button>
+    </div>
+  </div>
+  <div id="msg" class="msg"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
